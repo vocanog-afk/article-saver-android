@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import kotlinx.coroutines.*
 import java.text.SimpleDateFormat
@@ -16,7 +17,15 @@ class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        articleStorage = ArticleStorage(this)
+        try {
+            articleStorage = ArticleStorage(this)
+            Log.d("ArticleSaver", "MainActivity onCreate success")
+        } catch (e: Exception) {
+            Log.e("ArticleSaver", "Error in onCreate: ${e.message}", e)
+            Toast.makeText(this, "初始化错误: ${e.message}", Toast.LENGTH_LONG).show()
+            finish()
+            return
+        }
 
         // 处理分享的Intent
         handleIntent(intent)

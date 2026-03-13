@@ -4,6 +4,7 @@ import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
@@ -19,7 +20,15 @@ class ArticleListActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        articleStorage = ArticleStorage(this)
+        try {
+            articleStorage = ArticleStorage(this)
+            Log.d("ArticleSaver", "ArticleListActivity onCreate success")
+        } catch (e: Exception) {
+            Log.e("ArticleSaver", "Error in ArticleListActivity onCreate: ${e.message}", e)
+            Toast.makeText(this, "初始化错误: ${e.message}", Toast.LENGTH_LONG).show()
+            finish()
+            return
+        }
 
         // 创建简单的ListView
         listView = ListView(this)
