@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Read Later</string>
+    <string name="empty_state">No saved items yet</string>
+    <string name="back">Back</string>
+    <string name="saved">Saved to Read Later</string>
+    <string name="open_in_app">Open in app</string>
+    <string name="open_in_browser">Open in browser</string>
+    <string name="empty_title">Nothing saved yet</string>
+    <string name="empty_body">Share any article, note, or link here to read later.</string>
+    <string name="empty_action">How to save</string>
+    <string name="in_app_reader">In-app reader</string>
+</resources>

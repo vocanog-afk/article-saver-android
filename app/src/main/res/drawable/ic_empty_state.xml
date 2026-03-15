@@ -1,0 +1,73 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- 背景圆形 -->
+    <path
+        android:fillColor="#EEF2FF"
+        android:pathData="M100,20c-44.2,0 -80,35.8 -80,80s35.8,80 80,80s80,-35.8 80,-80S144.2,20 100,20z"/>
+
+    <!-- 书本主体 -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M60,70 L60,130 Q80,120 100,130 L100,70 Q80,60 60,70 Z"/>
+
+    <path
+        android:fillColor="#818CF8"
+        android:pathData="M100,70 L100,130 Q120,120 140,130 L140,70 Q120,60 100,70 Z"/>
+
+    <!-- 书页细节 -->
+    <path
+        android:fillColor="#A5B4FC"
+        android:pathData="M65,80 L75,77 L75,82 L65,85 Z"/>
+
+    <path
+        android:fillColor="#A5B4FC"
+        android:pathData="M65,95 L75,92 L75,97 L65,100 Z"/>
+
+    <path
+        android:fillColor="#C7D2FE"
+        android:pathData="M105,80 L115,77 L115,82 L105,85 Z"/>
+
+    <path
+        android:fillColor="#C7D2FE"
+        android:pathData="M105,95 L115,92 L115,97 L105,100 Z"/>
+
+    <!-- 时钟元素 - 表示稍后 -->
+    <circle
+        android:fillColor="#EC4899"
+        android:pathData="M150,50a20,20 0,1 1,0 40a20,20 0,1 1,0 -40z"
+        android:strokeWidth="3"
+        android:strokeColor="#F472B6"/>
+
+    <!-- 时钟指针 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M150,60 L150,70 L158,70"/>
+
+    <!-- 时钟中心点 -->
+    <circle
+        android:fillColor="#FFFFFF"
+        android:pathData="M150,72a3,3 0,1 1,0 6a3,3 0,1 1,0 -6z"/>
+
+    <!-- 装饰元素 - 星星 -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M40,50 L45,55 L52,55 L47,60 L49,67 L42,63 L35,67 L37,60 L32,55 L39,55 Z"/>
+
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M160,140 L163,145 L168,145 L164,149 L165,154 L160,151 L155,154 L156,149 L152,145 L157,145 Z"/>
+
+    <!-- 装饰圆点 -->
+    <circle
+        android:fillColor="#C7D2FE"
+        android:pathData="M30,100a4,4 0,1 1,0 8a4,4 0,1 1,0 -8z"/>
+
+    <circle
+        android:fillColor="#F9A8D4"
+        android:pathData="M170,90a3,3 0,1 1,0 6a3,3 0,1 1,0 -6z"/>
+
+</vector>
